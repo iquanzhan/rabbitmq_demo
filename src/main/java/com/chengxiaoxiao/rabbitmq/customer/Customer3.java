@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @author Cheng Xiaoxiao
  */
 @Component
-@RabbitListener(queues = "fullstack")
+@RabbitListener(queues = "itheima")
 public class Customer3 {
 
     @RabbitHandler

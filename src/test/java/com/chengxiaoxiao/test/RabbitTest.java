@@ -29,4 +29,9 @@ public class RabbitTest {
         rabbitTemplate.convertAndSend("hello","", "分裂模式测试");
     }
 
+    @Test
+    public void sendTopic() {
+        rabbitTemplate.convertAndSend("topic","1.log", "主题模式测试");
+    }
+
 }
