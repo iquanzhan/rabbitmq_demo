@@ -24,4 +24,9 @@ public class RabbitTest {
         rabbitTemplate.convertAndSend("chengxiaoxiao", "直接模式测试");
     }
 
+    @Test
+    public void sendSplit() {
+        rabbitTemplate.convertAndSend("hello","", "分裂模式测试");
+    }
+
 }

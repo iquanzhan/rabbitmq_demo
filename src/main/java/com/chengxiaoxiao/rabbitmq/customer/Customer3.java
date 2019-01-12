@@ -8,13 +8,11 @@ import org.springframework.stereotype.Component;
  * @author Cheng Xiaoxiao
  */
 @Component
-@RabbitListener(queues = "chengxiaoxiao")
-public class Customer1 {
+@RabbitListener(queues = "fullstack")
+public class Customer3 {
 
     @RabbitHandler
     public void getMsg(String msg) {
-        System.out.printf("直接消费模式：" + msg);
+        System.out.printf("fullstack接收到消息：" + msg);
     }
-
-
 }
